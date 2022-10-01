@@ -1,24 +1,10 @@
 import './employees-list-item.css';
-import {Component} from 'react';
 
-class EmployeesListItem extends Component{
-    constructor(props){
-        super(props);
-          
-    }
-//    onIncrease = () => {
-//     this.setState(({increase}) =>({
-//         increase: !increase
-//     }))
-//    }
-//    clickLike = () => {
-//     this.setState(({rise}) =>({
-//         rise: !rise
-//     }))
-//     }
-   
-    render() {
-        const{name, salary, onDelete, onToggleProp,increase,rise} = this.props;
+
+const EmployeesListItem = (props) => {
+    
+
+        const{name, salary, onDelete, onToggleProp,increase,rise} = props;
         
 
         let classNames = "list-group-item d-flex justify-content-between";
@@ -53,6 +39,6 @@ class EmployeesListItem extends Component{
     
     }
     
-}
+
 
 export default EmployeesListItem;
